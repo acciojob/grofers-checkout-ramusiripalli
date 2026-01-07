@@ -22,10 +22,11 @@ const getSum = () => {
 	totalRow.id = 'total-row';
 
 	const totalCell = document.createElement("td");
+	totalCell.id="ans";
 	totalCell.colSpan= 2;
 	totalCell.style.fontWeight = "bold";
 	totalCell.style.textAlign = "center";
-	totalCell.textContent = `Total Price = Rs ${total}`;
+	totalCell.textContent = total;
 
 	totalRow.appendChild(totalCell);
 	table.appendChild(totalRow);
